@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snipwind - copy any element as Tailwind, HTML or JSX</title>
+<meta name="description" content="A Chrome extension that copies any element from any website as clean Tailwind, HTML + CSS, or JSX. Runs locally, no account.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="icon.png" alt="">Snipwind</a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Copy any element as <em>clean Tailwind</em>.</h1>
+      <p class="lead">Click something on any website. Get it back as Tailwind, HTML + CSS, or JSX, ready to paste into your project.</p>
+      <div class="cta">
+        <!-- STORE_URL: replace href and label once the listing is live -->
+        <a class="btn" id="install" href="#how">Coming soon to the Chrome Web Store</a>
+        <a class="btn ghost" href="#how">See how it works</a>
+      </div>
+      <p class="note">Free. No account, nothing leaves your browser.</p>
+
+      <div class="demo">
+        <div class="pane">
+          <div class="pane-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span> any website</div>
+          <div class="stage">
+            <div class="pick">
+              <div class="card">
+                <h3>Pro plan</h3>
+                <p>Everything in Free, plus unlimited projects and <strong>priority</strong> support.</p>
+                <div class="row">
+                  <div class="price">$19 <small>/ month</small></div>
+                  <span class="buy">Get started</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pane">
+          <div class="pane-head">Snipwind</div>
+          <div class="tabs"><span class="on">Tailwind</span><span>HTML + CSS</span><span>JSX</span></div>
+<pre class="code">&lt;<b>div</b> class="<i>max-w-[340px] p-[22px] border border-[#e5e7eb] rounded-xl bg-white shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1)] text-[#1f2937] font-[Arial,sans-serif]</i>"&gt;
+  &lt;<b>h3</b> class="<i>mb-2 text-[#111827] text-xl font-bold leading-7</i>"&gt;Pro plan&lt;/<b>h3</b>&gt;
+  &lt;<b>p</b> class="<i>mb-4 text-[#6b7280] text-sm leading-[1.6]</i>"&gt;Everything in Free, plus unlimited projects and &lt;<b>strong</b> class="<i>font-bold</i>"&gt;priority&lt;/<b>strong</b>&gt; support.&lt;/<b>p</b>&gt;
+  &lt;<b>div</b> class="<i>flex justify-between items-center gap-3</i>"&gt;
+    &lt;<b>div</b> class="<i>text-[#4f46e5] text-[24px] font-bold</i>"&gt;$19 &lt;<b>small</b> class="<i>text-[#9ca3af] text-[13px] font-normal</i>"&gt;/ month&lt;/<b>small</b>&gt;&lt;/<b>div</b>&gt;
+    &lt;<b>span</b> class="<i>px-[18px] py-2.5 rounded-lg bg-[#4f46e5] text-white text-[14px] font-semibold</i>"&gt;Get started&lt;/<b>span</b>&gt;
+  &lt;/<b>div</b>&gt;
+&lt;/<b>div</b>&gt;</pre>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Output you would write yourself</h2>
+      <p class="sub">Most copy tools dump every computed style. Snipwind keeps only what the element needs.</p>
+      <div class="grid3">
+        <div class="tile"><h3>Three formats</h3><p>Tailwind classes, plain HTML with a small stylesheet, or a JSX component. Switch tabs, copy the one you need.</p></div>
+        <div class="tile"><h3>Stays flexible</h3><p>Widths that were <code>auto</code>, percentages and <code>calc()</code> stay that way, so the copy still adapts to its container.</p></div>
+        <div class="tile"><h3>No defaults, no noise</h3><p>Styles the browser or Tailwind already applies are left out. Padding, borders and corners collapse into shorthands.</p></div>
+        <div class="tile"><h3>Icons and details</h3><p>Inline SVG icons come along with their colours, and so do <code>::before</code> and <code>::after</code> decorations.</p></div>
+        <div class="tile"><h3>Tailwind v3 and v4</h3><p>Only uses class names that mean the same thing in both versions, with exact values where they differ.</p></div>
+        <div class="tile"><h3>Private by design</h3><p>Everything runs inside the page you are on. No account, no tracking, no page content sent anywhere.</p></div>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>How it works</h2>
+      <p class="sub">Three steps, no setup.</p>
+      <div class="grid3 steps">
+        <div class="tile"><h3>Start picking</h3><p>Click the Snipwind icon in the toolbar, or press <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>.</p></div>
+        <div class="tile"><h3>Click an element</h3><p>Hover to highlight, click to select. <kbd>↑</kbd> moves to the parent, <kbd>↓</kbd> to the first child.</p></div>
+        <div class="tile"><h3>Copy and paste</h3><p>Choose Tailwind, HTML + CSS or JSX, press Copy, and paste it into your editor.</p></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details><summary>Is it free?</summary><p>Yes. Snipwind is free to use.</p></details>
+        <details><summary>Does it copy fonts?</summary><p>It copies the font names and sizes, not the font files. If your project does not load the same web font, text falls back to the next font in the list.</p></details>
+        <details><summary>Does it copy hover effects and mobile layouts?</summary><p>Not yet. Snipwind copies the element as it looks at the moment you click it.</p></details>
+        <details><summary>Is my browsing data collected?</summary><p>No. The extension only runs when you click its icon, works entirely inside that page, and has no analytics. See the <a href="privacy/">privacy policy</a>.</p></details>
+        <details><summary>Can I use what I copy?</summary><p>Snipwind copies structure and styling. Text, images, logos and overall designs still belong to their owners, so use it to learn from and adapt layouts, not to clone someone's site.</p></details>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 <a href="../">DS3C</a></span>
+    <span><a href="privacy/">Privacy</a> · <a href="https://github.com/abdulalghani003/ds3c/issues">Contact</a></span>
+  </div>
+</footer>
+</body>
+</html>
