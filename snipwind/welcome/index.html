@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snipwind is installed</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" href="../../style.css">
+<style>
+  .try { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .slot { background: #f3f4f6; border-radius: 14px; padding: 24px; display: flex; align-items: center; justify-content: center; min-height: 220px; }
+  /* practice components: ordinary CSS, on purpose */
+  .t-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1); color: #1f2937; font-family: Arial, sans-serif; }
+  .t-card h3 { margin: 0 0 6px; font-size: 18px; color: #111827; }
+  .t-card p { margin: 0 0 14px; font-size: 14px; line-height: 1.5; color: #6b7280; }
+  .t-card span { display: inline-block; background: #4f46e5; color: #fff; border-radius: 8px; padding: 8px 14px; font-size: 14px; font-weight: 600; }
+  .t-alert { display: flex; gap: 12px; align-items: flex-start; width: 100%; background: #ecfdf5; border: 1px solid #a7f3d0;
+    border-left: 4px solid #10b981; border-radius: 10px; padding: 14px 16px; color: #065f46; font: 14px/1.5 Arial, sans-serif; }
+  .t-alert svg { flex: none; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; margin-top: 1px; }
+  .t-alert b { display: block; }
+  .t-user { display: flex; align-items: center; gap: 12px; width: 100%; background: #fff; border-radius: 9999px; padding: 8px 18px 8px 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.08); font-family: Arial, sans-serif; color: #111827; }
+  .t-user i { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b, #ef4444); flex: none; }
+  .t-user small { display: block; color: #6b7280; font-size: 12px; }
+  .t-user em { margin-left: auto; font-style: normal; font-size: 12px; font-weight: 700; color: #1d4ed8; background: #dbeafe; padding: 3px 9px; border-radius: 9999px; }
+  @media (max-width: 800px) { .try { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../"><img src="../icon.png" alt="">Snipwind</a>
+    <nav><a href="../">Home</a></nav>
+  </header>
+
+  <main>
+    <div class="hero" style="padding-bottom: 24px">
+      <h1>Snipwind is <em>installed</em>.</h1>
+      <p class="lead">Thirty seconds to your first copy.</p>
+    </div>
+
+    <section>
+      <div class="grid3 steps">
+        <div class="tile"><h3>Pin it</h3><p>Click the puzzle icon in Chrome's toolbar, then the pin next to Snipwind, so it is always one click away.</p></div>
+        <div class="tile"><h3>Start picking</h3><p>Click the Snipwind icon, or press <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>.</p></div>
+        <div class="tile"><h3>Click and copy</h3><p>Click an element, choose Tailwind, HTML + CSS or JSX, and press Copy. <kbd>↑</kbd> selects the parent.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Try it right here</h2>
+      <p class="sub">Start Snipwind and click one of these.</p>
+      <div class="try">
+        <div class="slot">
+          <div class="t-card">
+            <h3>Starter plan</h3>
+            <p>Up to three projects and community support.</p>
+            <span>Choose plan</span>
+          </div>
+        </div>
+        <div class="slot">
+          <div class="t-alert">
+            <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><b>Deploy finished</b>Your site is live in 14 regions.</div>
+          </div>
+        </div>
+        <div class="slot">
+          <div class="t-user">
+            <i></i>
+            <div>Dana Okafor<small>Product designer</small></div>
+            <em>PRO</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Good to know</h2>
+      <div class="faq">
+        <details open><summary>It does not work on some pages</summary><p>Chrome blocks every extension on its own pages, such as the Chrome Web Store, settings and new-tab pages. Snipwind works on ordinary websites.</p></details>
+        <details><summary>The shortcut does nothing</summary><p>Another extension may already use it. You can change it at <code>chrome://extensions/shortcuts</code>.</p></details>
+        <details><summary>Found a bug or missing something?</summary><p><a href="https://github.com/abdulalghani003/ds3c/issues">Tell us on GitHub</a>. Reports with the page address are the fastest to fix.</p></details>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 <a href="../../">DS3C</a></span>
+    <span><a href="../privacy/">Privacy</a></span>
+  </div>
+</footer>
+</body>
+</html>
