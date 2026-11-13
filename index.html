@@ -3,31 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DS3C - small, sharp tools</title>
-<meta name="description" content="DS3C is a small studio making focused tools and games.">
-<link rel="icon" href="snipwind/icon.png">
+<title>DS3C - games, tools & apps</title>
+<meta name="description" content="DS3C is an indie studio making games, tools and apps: Slipline, PokerX and Snipwind.">
+<link rel="icon" href="img/favicon.png">
+<meta property="og:title" content="DS3C - games, tools & apps">
+<meta property="og:description" content="Indie studio behind Slipline (kart racer), PokerX (free poker with friends) and Snipwind (Chrome extension).">
+<meta property="og:image" content="https://abdulalghani003.github.io/ds3c/img/ds3c-logo.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 <div class="wrap">
   <header class="top">
-    <a class="brand" href="./">DS3C</a>
-    <nav><a href="snipwind/">Snipwind</a></nav>
+    <a class="brand mono" href="./"><span class="caret">&gt;</span>ds3c</a>
+    <nav>
+      <a href="#slipline">Slipline</a>
+      <a href="#pokerx">PokerX</a>
+      <a href="snipwind/">Snipwind</a>
+    </nav>
   </header>
 
   <main>
     <div class="hero">
-      <h1>Small, <em>sharp</em> tools.</h1>
-      <p class="lead">DS3C is a small studio. We build focused things that do one job well.</p>
+      <h1 class="prompt"><span class="caret">&gt;</span> games, tools &amp; apps<span class="cursor" aria-hidden="true"></span></h1>
+      <p class="lead">DS3C is an indie studio. We build the things we'd want to play and use.</p>
     </div>
 
     <section>
-      <div class="products">
-        <a class="product" href="snipwind/">
-          <img src="snipwind/icon.png" alt="">
-          <h3>Snipwind</h3>
-          <p>Chrome extension. Click any element on any website and copy it as clean Tailwind, HTML + CSS, or JSX.</p>
-        </a>
+      <div class="showcase">
+        <article class="item" id="slipline">
+          <a class="cover" href="https://play.google.com/store/apps/details?id=com.ds3c.edgeracers">
+            <img src="img/slipline-cover.jpg" alt="Slipline: a pink kart on a podium under a purple star sky" loading="lazy">
+          </a>
+          <div class="body">
+            <div class="title"><img src="img/slipline-icon.png" alt=""><div><h3>Slipline</h3><span class="tag">Game · Android</span></div></div>
+            <p>An arcade kart racer on tracks that float in the sky. Hold drift to charge your sparks, let go to boost, and beat seven rivals over three laps. Unlock paints, toppers and trails in the garage.</p>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ds3c.edgeracers">Get it on Google Play</a>
+          </div>
+        </article>
+
+        <article class="item" id="pokerx">
+          <a class="cover" href="https://holdem-online.com">
+            <img src="img/pokerx-cover.jpg" alt="PokerX: a poker table with a pair of kings and players around it" loading="lazy">
+          </a>
+          <div class="body">
+            <div class="title"><img src="img/pokerx-icon.png" alt=""><div><h3>PokerX</h3><span class="tag">Game · Browser</span></div></div>
+            <p>Texas Hold'em and blackjack with your friends, right in the browser. Make a private room, send the code, deal. Free, play money only, and no signup.</p>
+            <a class="btn" href="https://holdem-online.com">Play at holdem-online.com</a>
+          </div>
+        </article>
+
+        <article class="item" id="snipwind">
+          <a class="cover" href="snipwind/">
+            <img src="img/snipwind-cover.jpg" alt="Snipwind: copy any element as clean Tailwind" loading="lazy">
+          </a>
+          <div class="body">
+            <div class="title"><img src="snipwind/icon.png" alt=""><div><h3>Snipwind</h3><span class="tag">Tool · Chrome extension</span></div></div>
+            <p>Click any element on any website and copy it as clean Tailwind, HTML + CSS or JSX, hover states included. Free, and it runs entirely in your browser.</p>
+            <a class="btn" href="snipwind/">See Snipwind</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
@@ -36,7 +70,7 @@
 <footer>
   <div class="wrap">
     <span>© 2026 DS3C</span>
-    <span><a href="https://github.com/abdulalghani003/ds3c/issues">Contact</a></span>
+    <span><a href="https://www.tiktok.com/@ds3c_studio">TikTok</a> · <a href="https://github.com/abdulalghani003/ds3c/issues">Contact</a></span>
   </div>
 </footer>
 </body>
